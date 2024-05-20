@@ -1,0 +1,161 @@
+#bg-circle{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background: #FBFAFE;
+    border-bottom: 2px solid #F0EBFA;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    clip-path: ellipse(100vw 100vh at 50% 0%);
+}
+
+/* page - 1 */
+#page1{
+    width: 100vw;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#discount>button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+#discount>#btn1{
+    color: #fff;
+    background-color: #81C43B;
+    position: absolute;
+}
+
+#discount>#btn2{
+    padding-left: 90px;
+    color: rgba(0,0,0,0.8);
+    background-color: #F2F9EB;
+}
+
+#page1>h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 15px 0;
+    color: #35414B;
+}
+
+#page1>p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #4E5A65;
+}
+
+#tryfree{
+    border: 1px solid #E1E5EA;
+    border-radius: 3px;
+}
+
+#tryfree>input{
+    padding: 10px 15px;
+    border: none;
+}
+
+#tryfree>button{
+    padding: 13px 30px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #794CFF;
+    border: none;
+    cursor: pointer;
+}
+
+#page1>img{
+    margin: 40px 0;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 5px 15px;
+}
+
+#partners{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#partners>p{
+    text-align: center;
+}
+
+#partnerLogo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#partnerLogo>img{
+    margin: 0 50px;
+    width: 100px;
+    height: auto;
+}
+
+@media only screen and (max-width: 960px){
+    /* page - 1 */
+    #page1{
+        margin: 0;
+        padding: 40px 30px;
+    }
+
+    #page1 br{
+        display: none;
+    }
+
+    #discount>#btn1{
+        display: none;
+    }
+
+    #discount>#btn2{
+        padding-left: 0;
+    }
+
+    #page1>h1{
+        font-size: 30px;
+    }
+
+    #page1>img{
+        margin: 30px 0;
+        width: 90%;
+        height: auto;
+    }
+
+    #partners>p{
+        font-size: 12px;
+    }
+    
+    #partnerLogo>img{
+        margin: 0 20px;
+        width: 80px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    /* page - 1 */
+    #tryfree{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border: none;
+    }
+    #tryfree>input{
+        margin: 10px 0;
+        border: 1px solid #E1E5EA;
+    }
+    #partnerLogo>img{
+        width: 60px;
+    }
+}
