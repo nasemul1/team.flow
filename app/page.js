@@ -29,9 +29,9 @@ const page = () => {
                 <div id="partners">
                     <p>TRUSTED BY OVER <strong>10.000+ WORLD'S</strong> BEST TEAMS</p>
                     <div id="partnerLogo">
-                        <Image src={facebook} alt='facebook logo'></Image>
                         <Image src={google} alt='google logo'></Image>
                         <Image src={airbnb} alt='airbnb'></Image>
+                        <Image src={facebook} alt='facebook logo'></Image>
                         <Image src={hubspot} alt='hubspot'></Image>
                         <Image src={slack} alt='slack logo'></Image>
                     </div>
