@@ -1,0 +1,107 @@
+nav>#normal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+}
+
+nav>#normal>#logo{
+    padding-bottom: 6px;
+    font-family: 'Poetsen One', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: rgba( 0, 0, 0, 0.8);
+}
+
+nav>#normal>#page-links>a{
+    text-decoration: none;
+    color: rgba( 0, 0, 0, 0.8);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+nav>#normal>#login>a{
+    text-decoration: none;
+    color: rgba( 0, 0, 0, 0.8);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+nav>#normal>#login>button{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #794CFF;
+    background-color: #ECE5FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav>.dropdown{
+    display: none;
+}
+
+@media only screen and (max-width: 960px){
+    nav>#normal{
+        display: none;
+    }
+    nav>.dropdown{
+        display: inline-block;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    nav>.dropdown>#logo{
+        padding-bottom: 6px;
+        font-family: 'Poetsen One', sans-serif;
+        font-size: 22px;
+        font-weight: 200;
+        color: rgba( 0, 0, 0, 0.8);
+    }
+    nav>.dropdown>button{
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #794CFF;
+        background-color: #ECE5FF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        overflow: auto;
+        background-color: #ECE5FF;
+        border: 2px solid #794CFF;
+        border-radius: 5px;
+        top: 70px;
+        right: 20px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-content a {
+        display: block;
+        color: #000000;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 5px;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover {
+        color: #FFFFFF;
+        background-color: #794CFF;
+    }
+
+    .dropdown-content>#start-free{
+        background-color: #794CFF;
+        color: #FFFFFF;
+    }
+}
