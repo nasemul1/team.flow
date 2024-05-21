@@ -27,7 +27,7 @@ const page = () => {
                 </div>
                 <Image src={graphPic} alt='App screeshot'></Image>
                 <div id="partners">
-                    <p>TRUSTED BY OVER <strong>10.000+ WORLD'S</strong> BEST TEAMS</p>
+                    <p>TRUSTED BY OVER <strong>10,000+ WORLD'S</strong> BEST TEAMS</p>
                     <div id="partnerLogo">
                         <Image src={google} alt='google logo'></Image>
                         <Image src={airbnb} alt='airbnb'></Image>
@@ -39,6 +39,24 @@ const page = () => {
             </div>
             <div id="page2">
                 <Image src={screenShot1} alt="App screenshot"></Image>
+                <div id="features">
+                    <div className="feature">
+                        <h3>Survey your team</h3>
+                        <p>Powerful questions that get to the heart of how team members really feel.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>Resolve issues quickly</h3>
+                        <p>Anonymous messaging that connects managers and employees.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>Plan your 1-on-1s</h3>
+                        <p>Plan meetings together and give a stake employees and teams.</p>
+                    </div>
+                    <div className="feature">
+                        <h3>Track your progress</h3>
+                        <p>Easy-to-read reports and sharable results help managers and teams.</p>
+                    </div>
+                </div>
             </div>
         </>
     );
