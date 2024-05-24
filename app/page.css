@@ -107,6 +107,7 @@
 #page2{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 40px 100px;
     background-color: #FBFAFE;
     border-top: 1px solid #F0EBFA;
@@ -114,16 +115,17 @@
 }
 
 #page2>img{
-    width: 45%;
+    width: 100%;
     height: auto;
 }
 
 #page2>#features{
     margin-left: 80px;
+    width: 60%;
 }
 
 #features>.feature{
-    width: 450px;
+    width: 100%;
     padding: 20px 20px;
     border-left: 5px solid #FBFAFE;
     cursor: pointer;
@@ -144,6 +146,17 @@
     border-left: 5px solid #794CFF;
 }
 
+#page3{
+    width: 100%;
+    padding: 100px;
+}
+
+#page3>h2{
+    color: #35414B;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
 @media only screen and (max-width: 960px){
     /* page - 1 */
     #page1{
@@ -182,6 +195,23 @@
         width: 80px;
         height: auto;
     }
+
+    #page2{
+        padding: 40px 40px;
+    }
+
+    #page2>#features{
+        margin-left: 20px;
+    }
+    
+    #features>.feature{
+        width: 350px;
+        padding: 20px 20px;
+    }
+
+    #page3{
+        padding: 60px;
+    }
 }
 
 @media only screen and (max-width: 800px){
@@ -216,5 +246,9 @@
     #features>.feature{
         width: 100%;
         padding: 20px 20px;
+    }
+
+    #page3{
+        padding: 30px;
     }
 }

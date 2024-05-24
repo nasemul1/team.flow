@@ -1,6 +1,9 @@
 "use client"
 import Navbar from '@/components/navbar/navbar';
+import Features from '@/components/features2/features2';
 import "./page.css";
+import Image from 'next/image';
+import { useState } from 'react';
 import graphPic from "../public/graph.png";
 import airbnb from "../public/logo/airbnb.png";
 import facebook from "../public/logo/facebook.png";
@@ -8,8 +11,7 @@ import google from "../public/logo/google.png";
 import hubspot from "../public/logo/hubspot.png";
 import slack from "../public/logo/slack.png";
 import screenShot1 from "../public/chat.png";
-import Image from 'next/image';
-import { useState } from 'react';
+
 
 const page = () => {
     const [toggleState, setToggleState] = useState(1);
@@ -77,6 +79,10 @@ const page = () => {
                         <p>Easy-to-read reports and sharable results help managers and teams.</p>
                     </div>
                 </div>
+            </div>
+            <div id="page3">
+                <h2>Make your work easier</h2>
+                <Features />
             </div>
         </>
     );
