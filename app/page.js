@@ -1,6 +1,8 @@
 "use client"
 import Navbar from '@/components/navbar/navbar';
 import Features from '@/components/features2/features2';
+import Comments from '@/components/comments/comments';
+import Footer from '@/components/footer/Footer';
 import "./page.css";
 import Image from 'next/image';
 import { useState } from 'react';
@@ -11,6 +13,9 @@ import google from "../public/logo/google.png";
 import hubspot from "../public/logo/hubspot.png";
 import slack from "../public/logo/slack.png";
 import screenShot1 from "../public/chat.png";
+import graph2 from "../public/graph2.png";
+import playstore from "../public/playstore.png";
+import appstore from "../public/appstore.png";
 
 
 const page = () => {
@@ -84,6 +89,25 @@ const page = () => {
                 <h2>Make your work easier</h2>
                 <Features />
             </div>
+            <div id="page4">
+                <div>
+                    <h2>We work how you work everyday</h2>
+                    <p>Since the easiest things to use actually get used, we adapts to the way your team works - not the other way around.</p>
+                    <button>Get started free</button>
+                </div>
+                <Image src={graph2} alt="graph image"></Image>
+            </div>
+            <div id="page5">
+                <Comments />
+                <div id="download">
+                    <h3>84% of employees who use trust their direct manager</h3>
+                    <div>
+                        <Image src={playstore}></Image>
+                        <Image src={appstore}></Image>
+                    </div>
+                </div>
+            </div>
+            <Footer />
         </>
     );
 }

@@ -1,0 +1,101 @@
+#comments>h2{
+    width: 400px;
+    margin: auto;
+    font-size: 34px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #35414B;
+}
+
+.content{
+    display: none;
+    margin: auto;
+}
+
+#contents>.active{
+    color: #4E5A65;
+    display: block;
+    text-align: center;
+    width: 350px;
+    margin-bottom: 50px;
+}
+
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tab{
+    width: 270px;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.tab>div>h4{
+    color: #35414B;
+    font-size: 16px;
+}
+
+.tab>div>p{
+    font-size: 13px;
+    color: #4E5A65;
+}
+
+.tabs>.active{
+    border-top: 3px solid #35414B;
+}
+
+.tab>img{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 960px){
+    .tab{
+        width: 260px;
+    }
+    .tab>img{
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #comments>h2{
+        width: 300px;
+        margin: auto;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    #contents>.active{
+        font-size: 15px;
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .tab{
+        display: none;
+    }
+    .tabs>.active{
+        display: block;
+        border: none;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .tab>img{
+        width: 50px;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
